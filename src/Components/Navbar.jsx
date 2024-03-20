@@ -9,10 +9,9 @@ function Navbar() {
                 <h1 className='logo'>Organ-Donation</h1>
               </div>
               <div className="right">
-                <ul>
+                <ul style={{marginRight:'3vw'}}>
                 <Link to={'/'}><li>Home</li></Link>
                 <Link to={'/About'}><li>About</li></Link>
-                <Link to={'/Login'}><li>Login/Signup</li></Link>
                 </ul>
               </div>
           </div>

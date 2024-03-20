@@ -22,7 +22,7 @@ const User = mongoose.model('User', {
 app.get('/nearest-users', async (req, res) => {
   const { latitude, longitude } = req.query;
 
-  const maxDistance = 10000; // Max distance in meters
+  // const maxDistance = 10000; // Max distance in meters
 
   // Perform a geospatial query to find nearby users
   const nearestUsers = await User.find({
@@ -32,7 +32,7 @@ app.get('/nearest-users', async (req, res) => {
           type: 'Point',
           coordinates: [parseFloat(longitude), parseFloat(latitude)],
         },
-        $maxDistance: maxDistance,
+        // $maxDistance: maxDistance,
       },
     },
   });

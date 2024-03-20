@@ -33,16 +33,17 @@ function ImageUpload() {
   const handleImageUpload = async () => {
     const formData = new FormData();
     formData.append('image', selectedImage);
-
     try {
       // Send the image to the server for saving in the database
-      const response = await axios.post('/upload-image', formData, {
+      const response = await axios.post('http://localhost:3001/user/imageupload?image', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
-
-      console.log('Image uploaded successfully:', response.data);
+      console.log(response.status, 'response.status')
+      if(response.status == 200){
+        alert('Image uploaded successfully:');
+      }
     } catch (error) {
       console.error('Error uploading image:', error);
     }

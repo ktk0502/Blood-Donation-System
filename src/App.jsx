@@ -1,5 +1,9 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.css';
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
 
 import {
   BrowserRouter as Router,
@@ -9,8 +13,8 @@ import {
 
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Login from "./pages/Login";
-import Finddoner from './pages/Finddoner';
+import Register from "./pages/register";
+// import Finddoner from './pages/Finddoner';
 import Imgtxt from './pages/Imgtxt';
 
 
@@ -23,8 +27,8 @@ function App() {
           <Routes>
           <Route path="/" element={ <Home/> } />
           <Route path="/About" element={ <About/> } />
-          <Route path="/Login" element={ <Login/> } />
-          <Route path='Finddoner' element={<Finddoner/>}></Route>
+          <Route path="/Register" element={ <Register/> } />
+          {/* <Route path='Finddoner' element={<Finddoner/>}></Route> */}
           <Route path='Imgtxt' element={<Imgtxt/>}></Route>
           </Routes>
       </Router>

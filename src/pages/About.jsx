@@ -8,7 +8,7 @@ function About() {
           <h1 style={{padding:"3vh"}}>About Us</h1>
         </div>
         <div className="about" style={{display:"flex",padding:"5vh 10vw"}}>
-          <p style={{backgroundColor:"#ba0735",boxShadow:"2px 2px 4px #000000",padding:"3vh 3vw",borderRadius:"20px",color:'white',textShadow:'2px 2px 4px #00f'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sit quasi voluptatem quisquam,
+          <p style={{width:'90vw',backgroundColor:"#ba0735",boxShadow:"2px 2px 4px #000000",padding:"3vh 3vw",borderRadius:"20px",color:'white',textShadow:'2px 2px 4px #00f'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sit quasi voluptatem quisquam,
              quos velit repellendus nemo magni harum est, nesciunt quo vero! Doloremque delectus molestiae
               maiores recusandae numquam voluptatum libero magni tempore dignissimos inventore, nisi expedita 
               vitae voluptatibus debitis accusantium hic, qui totam odit, error ex officia tenetur! 
@@ -20,8 +20,8 @@ function About() {
           </p>
         </div>
         <div className="about-main" style={{display:"flex",paddingLeft:"10vw",paddingRight:"10vw",justifyContent:"space-between"}}>
-          <div className="left-doner" style={{height:'39vh',width:'38vw',backgroundColor:'#ba0735',borderRadius:'20px',boxShadow:"2px 2px 4px #000000"}}>
-              <div className="heading-doner" style={{display:'flex',alignItems:'center',justifyContent:'center',padding:'2vh',color:'white',fontSize:'20px'}}>
+          <div className="left-doner" style={{height:'55vh',width:'42vw',backgroundColor:'#ba0735',borderRadius:'20px',boxShadow:"2px 2px 4px #000000"}}>
+              <div className="heading-doner" style={{display:'flex',padding:'2vh',color:'white',fontSize:'20px'}}>
                 For Doners
               </div>
               <div className="para" style={{padding:'1vh 3vw',color:'white'}}>
@@ -35,8 +35,8 @@ function About() {
                   </p>
               </div>
           </div>          
-          <div className="rightdoner" style={{height:'39vh',width:'38vw',backgroundColor:'#ba0735',borderRadius:'20px',boxShadow:"2px 2px 4px #000000"}}>
-          <div className="right-doner" style={{display:'flex',alignItems:'center',justifyContent:'center',padding:'2vh',color:'white',fontSize:'20px'}}>
+          <div className="rightdoner" style={{height:'55vh',width:'42vw',backgroundColor:'#ba0735',borderRadius:'20px',boxShadow:"2px 2px 4px #000000"}}>
+          <div className="right-doner" style={{display:'flex',padding:'2vh',color:'white',fontSize:'20px'}}>
              For Recipients
             </div>
              <div className="para" style={{padding:'1vh 3vw',color:'white'}}>
@@ -50,6 +50,12 @@ function About() {
                 </p>
              </div>
           </div>
+        </div>
+        
+      </div>
+      <div className="footer" style={{marginTop:'5vh',display:'flex',justifyItems:'center',height:'11vh',backgroundColor:'#ba0735'}}>
+      <div class="footer-content" style={{maxWidth:'800px',margin:'0px auto',height:'10vh'}}>
+            <p style={{padding:'4vh',color:'white'}}>&copy; 2023 Your Website</p>
         </div>
       </div>
     </>

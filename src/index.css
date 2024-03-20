@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* overflow: hidden; */
 }
 
 .main {
@@ -52,6 +53,25 @@ a:hover{
 
 .container-img{
     border-radius: 10%;
-    box-shadow: 6px 0px 4px;
+    /* box-shadow: 6px 0px 4px; */
 }
 
+.toppage{
+    background-image: url('./assets/Header.png');
+}
+
+.imgdivi{
+    background-image: url('./assets/Signup.png');
+}
+
+.img_cc1{
+    background-image: url('./assets/HealthMatters.png');
+}
+
+.img_cc2{
+    background-image: url('./assets/Brightestweek.png');
+}
+
+.img_cc3{
+    background-image: url('./assets/Indialagging.png');
+}
